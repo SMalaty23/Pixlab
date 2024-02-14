@@ -25,6 +25,13 @@ public class PictureTester
         caterpillar.mirrorVertical();
         caterpillar.explore();
     }
+    public static void testMirrorVerticalRightToLeft() {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.mirrorVerticalRightToLeft();
+        beach.explore();
+    }
+
 
     /** Method to test mirrorTemple */
     public static void testMirrorTemple()
@@ -34,6 +41,8 @@ public class PictureTester
         temple.mirrorTemple();
         temple.explore();
     }
+
+
 
     /** Method to test the collage method */
     public static void testCollage()
@@ -51,6 +60,37 @@ public class PictureTester
         swan.explore();
     }
 
+    public static void testKeepOnlyBlue()
+    {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.keepOnlyBlue();
+        beach.explore();
+    }
+
+    public static void testNegate() {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.negateAllPixels();
+        beach.explore();
+    }
+
+    public static void testGrayscale() {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.grayScale();
+        beach.explore();
+    }
+
+    public static void testMirrorHorizontal() {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.mirrorHorizontal();
+        beach.explore();
+    }
+
+
+
     /** Main method for testing.  Every class can have a main
      * method in Java */
     public static void main(String[] args)
@@ -64,6 +104,8 @@ public class PictureTester
         //testKeepOnlyGreen();
         //testNegate();
         //testGrayscale();
+        //testMirrorVerticalRightToLeft();
+        testMirrorHorizontal();
         //testFixUnderwater();
         //testMirrorVertical();
         //testMirrorTemple();
